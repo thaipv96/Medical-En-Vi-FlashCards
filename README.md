@@ -37,16 +37,6 @@ Với hơn **1.000+ thuật ngữ y khoa** được biên soạn kỹ lưỡng, 
 
 ---
 
-## 🎬 Demo
-
-<div align="center">
-
-> 🖼 **Screenshot** *(khi upload lên GitHub, hãy thêm ảnh demo vào thư mục `/screenshots` và thay link bên dưới)*
-
-</div>
-
----
-
 ## ✨ Tính năng nổi bật
 
 ### 🎯 Trải nghiệm học tập
@@ -80,20 +70,4 @@ Với hơn **1.000+ thuật ngữ y khoa** được biên soạn kỹ lưỡng, 
 | `→` Arrow Right | Thẻ sau |
 
 ---
-
-## 🛠 Cài đặt & Sử dụng
-
-### 🚀 Cách 1: Sử dụng trực tiếp (Khuyến nghị)
-
-```bash
-# Clone repo về máy
-git clone https://github.com/your-username/medical-flashcards.git
-
-# Mở file HTML trong trình duyệt
-cd medical-flashcards
-open index.html   # macOS
-# hoặc
-start index.html  # Windows
-# hoặc
-xdg-open index.html  # Linux
 
