@@ -1,6 +1,6 @@
 <div align="center">
 
-🩺 Medical Flashcards
+**🩺 Medical Flashcards**
 
 *Học từ vựng y khoa thông minh — Lật thẻ, nghe phát âm, nhớ lâu hơn*
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 🌟 Giới thiệu
+**🌟 Giới thiệu**
 
 **Medical Flashcards** là một ứng dụng web học từ vựng y khoa dưới dạng **flashcard tương tác**, được thiết kế đặc biệt cho sinh viên y khoa, điều dưỡng, dược sĩ và bất kỳ ai muốn chinh phục "biển" thuật ngữ y khoa tiếng Anh.
 
@@ -34,9 +34,9 @@ Với hơn **1.000+ thuật ngữ y khoa** được biên soạn kỹ lưỡng, 
 
 ---
 
-## ✨ Tính năng nổi bật
+**✨ Tính năng nổi bật**
 
-### 🎯 Trải nghiệm học tập
+**🎯 Trải nghiệm học tập**
 - ✅ **1.000+ thuật ngữ y khoa** phủ rộng từ giải phẫu, sinh lý, bệnh học đến dược lý
 - ✅ **Thẻ lật 3D** mượt mà với hiệu ứng `perspective` và `preserve-3d`
 - ✅ **Điều hướng linh hoạt**: Chuột, phím tắt, hoặc vuốt màn hình cảm ứng
@@ -44,7 +44,7 @@ Với hơn **1.000+ thuật ngữ y khoa** được biên soạn kỹ lưỡng, 
 - ✅ **Xáo trộn ngẫu nhiên** — tránh học vẹt theo thứ tự
 - ✅ **Khôi phục ban đầu** — quay về danh sách gốc bất cứ lúc nào
 
-### 🔊 Text-to-Speech (TTS) — Điểm nhấn đặc biệt
+**🔊 Text-to-Speech (TTS) — Điểm nhấn đặc biệt**
 - 🎙 **3 lớp TTS dự phòng** đảm bảo luôn hoạt động:
   1. **Puter.js** *(online, không cần API key)* — giọng đọc chất lượng cao
   2. **Google Translate TTS** — fallback ổn định
@@ -53,13 +53,13 @@ Với hơn **1.000+ thuật ngữ y khoa** được biên soạn kỹ lưỡng, 
 - ⚡ **Tự động đọc** khi mở thẻ mới hoặc lật sang mặt nghĩa
 - 🎛 **Bật/tắt tự động đọc** dễ dàng
 
-### 📱 Responsive & Tối ưu
+**📱 Responsive & Tối ưu**
 - 💻 **Desktop**: Hiệu ứng hover 3D tinh tế
 - 📱 **Mobile**: Vuốt trái/phải để chuyển thẻ
 - 📟 **Tablet**: Layout co giãn thông minh với `clamp()`
 - 🎨 **UI hiện đại**: Gradient, glassmorphism, micro-animations
 
-### ⌨️ Phím tắt tiện lợi
+**⌨️ Phím tắt tiện lợi**
 | Phím | Chức năng |
 |------|-----------|
 | `Space` / `Enter` | Lật thẻ |
