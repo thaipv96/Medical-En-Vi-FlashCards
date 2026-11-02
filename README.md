@@ -9,7 +9,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Single File](https://img.shields.io/badge/Single%20File-100%25-7c3aed?style=for-the-badge)](.)
 
-**⚡ Không cài đặt · Chạy trên web hoặc mở file HTML**
+**⚡ Không cần cài đặt · Chạy trên web hoặc mở file HTML**
 
 </div>
 
