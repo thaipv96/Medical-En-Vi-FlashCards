@@ -7,12 +7,9 @@
 [![Made with HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 [![Single File](https://img.shields.io/badge/Single%20File-100%25-7c3aed?style=for-the-badge)](.)
 
-**⚡ Không cần cài đặt · Không cần build · Không cần server — chỉ cần mở file HTML là chạy!**
-
-[🚀 Xem Demo](#-demo) · [✨ Tính năng](#-tính-năng-nổi-bật) · [🛠 Cài đặt](#-cài-đặt--sử-dụng) · [🤝 Đóng góp](#-đóng-góp)
+**⚡ Không cài đặt · Chạy trên web hoặc mở file HTML**
 
 </div>
 
