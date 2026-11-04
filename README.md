@@ -38,7 +38,7 @@
 
 ### Điểm nổi bật
 
-- 🚀 **Không cần cài đặt** — Một file HTML duy nhất (`index.html`), mở bằng trình duyệt là chạy.
+- 🚀 **Không cần cài đặt** — Mở một file HTML duy nhất (`index.html`) hoặc truy cập liên kết bằng trình duyệt là chạy.
 - 🌐 **Sẵn sàng cho GitHub Pages** — Với tên `index.html`, ứng dụng tự động hiển thị tại root URL: `https://<username>.github.io/<repo>/`
 - 📴 **Hoạt động offline** — Không cần Internet (trừ các TTS engine cloud tuỳ chọn).
 - 🎨 **Thiết kế tối ưu mobile** — Thao tác một tay, hỗ trợ cử chỉ vuốt.
