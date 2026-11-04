@@ -151,5 +151,4 @@ Dữ liệu được biên soạn dựa trên các nguồn uy tín:
 ---
 
 ## 📧 Liên hệ
-**Email:** *thaipv96@gmail.com*
----
+- **Email:** *thaipv96@gmail.com*
