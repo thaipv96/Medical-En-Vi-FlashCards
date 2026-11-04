@@ -9,7 +9,7 @@
 
 ## 🎯 Giới thiệu
 
-**Flashcard Tiếng Anh Y khoa** là một ứng dụng web học tiếng Anh chuyên ngành y khoa, được thiết kế đặc biệt cho các bác sĩ, điều dưỡng và sinh viên y khoa người Việt. Toàn bộ giao diện bằng tiếng Việt, nội dung học bằng tiếng Anh.
+### **Flashcard Tiếng Anh Y khoa** là một ứng dụng web học tiếng Anh chuyên ngành y khoa, được thiết kế đặc biệt cho các bác sĩ, điều dưỡng và sinh viên y khoa người Việt. Toàn bộ giao diện bằng tiếng Việt, nội dung học bằng tiếng Anh.
 ---
 
 ## ✨ Tính năng
@@ -56,25 +56,11 @@
 ---
 
 ## 🚀 Bắt đầu nhanh
-
-### Cách 1: Dùng trực tiếp qua GitHub Pages (nhanh nhất)
-
 Truy cập trực tiếp:
 
 ```
 https://thaipv96.github.io/Medical-En-Vi-FlashCards/
 ```
-
-### Cách 2: Tải trực tiếp (dùng offline)
-
-1. **Tải file HTML** về máy:
-   - Truy cập repository này → click **Code** → **Download ZIP**
-   - Hoặc tải trực tiếp file `index.html`
-
-2. **Mở bằng trình duyệt**:
-   - Nhấp đúp vào file `index.html` → trình duyệt mặc định sẽ mở ứng dụng.
-   - Hoặc kéo thả file vào cửa sổ Chrome/Firefox/Safari/Edge.
-
 ---
 
 ## 📚 Hướng dẫn sử dụng
@@ -105,28 +91,6 @@ https://thaipv96.github.io/Medical-En-Vi-FlashCards/
 | R | Shuffle |
 | Esc | Dừng TTS / đóng panel |
 
-### Cài đặt TTS
-
-1. Nhấn nút **Giọng đọc** ở footer.
-2. Chọn engine:
-   - **Tự động** — Thử Browser → Kokoro → Cloud theo thứ tự.
-   - **Browser Native TTS** — Miễn phí, offline (khuyến nghị bắt đầu).
-   - **Kokoro Offline Neural** — Cần model (~80MB) được nhúng riêng.
-   - **Google Cloud TTS / Microsoft Azure** — Cần credentials.
-3. Chọn giọng đọc (voice) và tốc độ (rate).
-4. Nếu dùng cloud → bật **Cho phép cloud fallback** (mặc định TẮT).
-
-### Xuất/nhập tiến độ
-
-**Xuất:**
-- Nhấn **Thêm** → **Xuất tiến độ học**
-- File `medical_flashcards_progress_<timestamp>.json` được tải về.
-
-**Nhập:**
-- Nhấn **Thêm** → **Nhập tiến độ học**
-- Chọn file JSON đã xuất trước đó.
-- **Lưu ý:** Việc nhập sẽ ghi đè lên tiến độ hiện tại (có xác nhận).
-
 ---
 
 ### Nguồn tham khảo từ vựng
@@ -141,4 +105,4 @@ Dữ liệu được biên soạn dựa trên các nguồn uy tín:
 ---
 
 ## 📧 Liên hệ
-- **Email:** *thaipv96@gmail.com*
+### **Email:** *thaipv96@gmail.com*
