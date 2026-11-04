@@ -38,7 +38,8 @@
 
 ### Điểm nổi bật
 
-- 🚀 **Không cần cài đặt** — Một file HTML duy nhất, mở bằng trình duyệt là chạy.
+- 🚀 **Không cần cài đặt** — Một file HTML duy nhất (`index.html`), mở bằng trình duyệt là chạy.
+- 🌐 **Sẵn sàng cho GitHub Pages** — Với tên `index.html`, ứng dụng tự động hiển thị tại root URL: `https://<username>.github.io/<repo>/`
 - 📴 **Hoạt động offline** — Không cần Internet (trừ các TTS engine cloud tuỳ chọn).
 - 🎨 **Thiết kế tối ưu mobile** — Thao tác một tay, hỗ trợ cử chỉ vuốt.
 - 🧠 **SRS thông minh** — Lặp lại ngắt quãng, tối ưu thời gian ôn tập.
@@ -63,7 +64,7 @@
 - **Nội dung căn giữa 2 trục** — Thuật ngữ, IPA, nghĩa, câu ví dụ đều được căn giữa ngang và dọc.
 - **Lật thẻ bằng tap** — Nhấn trực tiếp vào Front hoặc Back.
 - **Nút TTS riêng** — Góc dưới-phải, không lẫn với nội dung học.
-- **Ba mặt hiển thị** — Front (thuật ngữ), Back (nghĩa + ví dụ), hoặc cả hai mặt.
+- **Hai mặt hiển thị** — Front (thuật ngữ), Back (nghĩa + ví dụ).
 
 ### 📊 Ba chế độ học
 
@@ -143,14 +144,26 @@ Ba nút **luôn hiển thị** ở cả Front và Back:
 
 ## 🚀 Bắt đầu nhanh
 
-### Cách 1: Tải trực tiếp (đơn giản nhất)
+### Cách 1: Dùng trực tiếp qua GitHub Pages (nhanh nhất)
+
+Nếu repository đã bật GitHub Pages, truy cập thẳng:
+
+```
+https://<username>.github.io/<repo>/
+```
+
+Ví dụ: `https://nguyenvana.github.io/medical-english-flashcards/`
+
+> 💡 **Lưu ý:** Vì file chính là `index.html`, GitHub Pages tự động serve nó tại root URL, không cần gõ tên file.
+
+### Cách 2: Tải trực tiếp (dùng offline)
 
 1. **Tải file HTML** về máy:
    - Truy cập repository này → click **Code** → **Download ZIP**
-   - Hoặc tải trực tiếp file [`medical_english_flashcards.html`](medical_english_flashcards.html)
+   - Hoặc tải trực tiếp file [`index.html`](index.html)
 
 2. **Mở bằng trình duyệt**:
-   - Nhấp đúp vào file HTML → trình duyệt mặc định sẽ mở ứng dụng.
+   - Nhấp đúp vào file `index.html` → trình duyệt mặc định sẽ mở ứng dụng.
    - Hoặc kéo thả file vào cửa sổ Chrome/Firefox/Safari/Edge.
 
 3. **Nạp dữ liệu đầy đủ** (tuỳ chọn):
@@ -158,25 +171,26 @@ Ba nút **luôn hiển thị** ở cả Front và Back:
    - Chọn file `medical_english_vi.json`
    - Ứng dụng sẽ tự parse 2077 bản ghi
 
-### Cách 2: Clone repository
+### Cách 3: Clone repository
 
 ```bash
 git clone https://github.com/<username>/medical-english-flashcards.git
 cd medical-english-flashcards
-# Mở file HTML bằng trình duyệt
-open medical_english_flashcards.html          # macOS
-start medical_english_flashcards.html         # Windows
-xdg-open medical_english_flashcards.html      # Linux
+
+# Mở file index.html bằng trình duyệt
+open index.html          # macOS
+start index.html         # Windows
+xdg-open index.html      # Linux
 ```
 
-### Cách 3: Deploy lên GitHub Pages (cho nhiều người dùng)
+### Cách 4: Deploy lên GitHub Pages (cho nhiều người dùng)
 
 1. Fork repository hoặc push code lên nhánh `main`.
 2. Vào **Settings** → **Pages**.
 3. Source: chọn **Deploy from a branch** → Branch `main` / folder `root`.
-4. Truy cập `https://<username>.github.io/medical-english-flashcards/medical_english_flashcards.html`.
+4. Truy cập `https://<username>.github.io/<repo>/`.
 
-> 💡 **Lưu ý:** Khi deploy lên GitHub Pages, ưu tiên **Browser Native TTS** (miễn phí). Kokoro/Google/Azure cần cấu hình riêng.
+> 💡 **Ưu điểm của `index.html`:** GitHub Pages sẽ tự động dùng file này làm trang chủ, URL ngắn gọn không cần `/index.html` ở cuối.
 
 ---
 
@@ -238,7 +252,7 @@ xdg-open medical_english_flashcards.html      # Linux
 
 ```
 ┌─────────────────────────────────────────┐
-│         Single HTML File                │
+│      index.html (Single File)           │
 │  ┌───────────────────────────────────┐  │
 │  │  HTML (semantic + ARIA)           │  │
 │  ├───────────────────────────────────┤  │
@@ -255,6 +269,28 @@ xdg-open medical_english_flashcards.html      # Linux
 │  │  Dataset JSON (embedded/loaded)   │  │
 │  └───────────────────────────────────┘  │
 └─────────────────────────────────────────┘
+```
+
+### Cấu trúc repository
+
+```
+medical-english-flashcards/
+├── index.html                         ← Ứng dụng chính (single file)
+├── medical_english_vi.json            ← Dataset đầy đủ (2077 bản ghi)
+├── README.md                          ← File này
+├── LICENSE                            ← MIT License
+├── .gitignore
+├── CHANGELOG.md                       ← (tuỳ chọn)
+├── CONTRIBUTING.md                    ← (tuỳ chọn)
+├── docs/
+│   └── screenshots/
+│       ├── desktop-front.png
+│       ├── desktop-back.png
+│       ├── mobile-front.png
+│       ├── mobile-back.png
+│       └── mobile-dark.png
+└── examples/
+    └── progress-sample.json
 ```
 
 ### Các module chính
@@ -563,13 +599,12 @@ Kokoro-82M ONNX cần:
 - ONNX Runtime Web WASM (~20 MB)
 - Tokenizer + G2P phonemizer
 
-Tổng cộng ~110 MB → không thể nhúng vào README. Người dùng cần tự tích hợp theo [hướng dẫn trong code](#) hoặc dùng Browser Native TTS.
+Tổng cộng ~110 MB → không thể nhúng vào file `index.html` mặc định. Người dùng cần tự tích hợp theo hướng dẫn trong code hoặc dùng Browser Native TTS.
 
 ### Không có kế hoạch hỗ trợ
 
 - ❌ Dashboard thống kê phức tạp (giữ tối giản)
 - ❌ Search / Filter nâng cao (không cần thiết cho flashcard)
-- ❌ Import JSON dataset qua UI (đã có, nhưng ở mức cơ bản)
 - ❌ Sync đa thiết bị tự động (dùng export/import thay thế)
 
 ---
@@ -603,7 +638,7 @@ cd medical-english-flashcards
 # 3. Tạo branch mới
 git checkout -b feature/ten-tinh-nang
 
-# 4. Sửa file medical_english_flashcards.html
+# 4. Sửa file index.html
 # 5. Test kỹ trên Chrome + Firefox + mobile
 # 6. Commit với message rõ ràng
 git commit -m "feat: thêm tính năng X"
@@ -617,7 +652,7 @@ git push origin feature/ten-tinh-nang
 ### Quy ước code
 
 - **Vanilla JS** — Không thêm framework/dependency.
-- **Single file** — Toàn bộ code trong `medical_english_flashcards.html`.
+- **Single file** — Toàn bộ code trong `index.html`.
 - **Comment rõ ràng** — Giải thích logic phức tạp.
 - **Không phá vỡ tính năng hiện có** — Test kỹ trước khi PR.
 - **Tuân thủ spec** — Flashcard phải là 5:6, 3 nút Review luôn hiện, v.v.
