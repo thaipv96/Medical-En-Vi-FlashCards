@@ -8,9 +8,7 @@
 ---
 
 ## 🎯 Giới thiệu
-
-### **Flashcard Tiếng Anh Y khoa** là một ứng dụng web học tiếng Anh chuyên ngành y khoa, được thiết kế đặc biệt cho các bác sĩ, điều dưỡng và sinh viên y khoa người Việt. Toàn bộ giao diện bằng tiếng Việt, nội dung học bằng tiếng Anh.
----
+Flashcard Tiếng Anh Y khoa là một ứng dụng web học tiếng Anh chuyên ngành y khoa, được thiết kế đặc biệt cho các bác sĩ, điều dưỡng và sinh viên y khoa người Việt. Toàn bộ giao diện bằng tiếng Việt, nội dung học bằng tiếng Anh.
 
 ## ✨ Tính năng
 
@@ -53,15 +51,12 @@
 - Tự động lưu lựa chọn.
 - Màu sắc tương phản cao, đạt chuẩn WCAG AA.
 
----
-
 ## 🚀 Bắt đầu nhanh
 Truy cập trực tiếp:
 
 ```
 https://thaipv96.github.io/Medical-En-Vi-FlashCards/
 ```
----
 
 ## 📚 Hướng dẫn sử dụng
 
@@ -91,8 +86,6 @@ https://thaipv96.github.io/Medical-En-Vi-FlashCards/
 | R | Shuffle |
 | Esc | Dừng TTS / đóng panel |
 
----
-
 ### Nguồn tham khảo từ vựng
 Dữ liệu được biên soạn dựa trên các nguồn uy tín:
 - [Cambridge Dictionary](https://dictionary.cambridge.org)
@@ -102,7 +95,6 @@ Dữ liệu được biên soạn dựa trên các nguồn uy tín:
 - [MedlinePlus](https://medlineplus.gov)
 - [NICE Guidelines](https://www.nice.org.uk)
 - [PubMed](https://pubmed.ncbi.nlm.nih.gov)
----
 
 ## 📧 Liên hệ
-### **Email:** *thaipv96@gmail.com*
+**Email:** thaipv96@gmail.com=
