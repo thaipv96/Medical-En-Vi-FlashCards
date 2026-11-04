@@ -1,13 +1,9 @@
 # 🩺 Flashcard Tiếng Anh Y khoa
 
-> Ứng dụng flashcard học từ vựng, cụm từ và cấu trúc câu tiếng Anh y khoa dành cho bác sĩ Việt Nam — chạy hoàn toàn offline, không cần cài đặt, không cần đăng ký.
-
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript ES6+](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![No Dependencies](https://img.shields.io/badge/dependencies-0-success?style=flat-square)](#)
-[![Single File](https://img.shields.io/badge/single--file-yes-blue?style=flat-square)](#)
-[![Offline Ready](https://img.shields.io/badge/offline-ready-brightgreen?style=flat-square)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 ---
@@ -15,16 +11,6 @@
 ## 🎯 Giới thiệu
 
 **Flashcard Tiếng Anh Y khoa** là một ứng dụng web học tiếng Anh chuyên ngành y khoa, được thiết kế đặc biệt cho các bác sĩ, điều dưỡng và sinh viên y khoa người Việt. Toàn bộ giao diện bằng tiếng Việt, nội dung học bằng tiếng Anh.
-
-### Điểm nổi bật
-
-- 🚀 **Không cần cài đặt** — Mở một file HTML duy nhất (`index.html`) hoặc truy cập liên kết bằng trình duyệt là chạy.
-- 🌐 **GitHub Pages** — Ứng dụng tự động hiển thị tại root URL: `https://thaipv96.github.io/Medical-En-Vi-FlashCards/`
-- 🎨 **Thiết kế tối ưu mobile** — Thao tác một tay, hỗ trợ cử chỉ vuốt.
-- 🧠 **SRS thông minh** — Lặp lại ngắt quãng, tối ưu thời gian ôn tập.
-- 🎤 **Bốn TTS engine** — Từ Browser Native (offline) đến Neural TTS chất lượng cao.
-- 💾 **Lưu tiến độ tự động** — Xuất/nhập để sao lưu hoặc chuyển thiết bị.
-- 🎯 **Dữ liệu thực** — 2077 bản ghi từ vựng và cấu trúc câu y khoa được biên soạn kỹ lưỡng.
 
 ### Đối tượng sử dụng
 
@@ -77,14 +63,6 @@
 - Tự động lưu lựa chọn.
 - Màu sắc tương phản cao, đạt chuẩn WCAG AA.
 
-### ♿ Accessibility
-
-- Semantic HTML, ARIA roles.
-- Keyboard navigation đầy đủ.
-- Screen reader compatible.
-- `prefers-reduced-motion` support.
-- Progress bar có `role="progressbar"` và ARIA values.
-
 ---
 
 ## 🚀 Bắt đầu nhanh
@@ -101,23 +79,11 @@ https://thaipv96.github.io/Medical-En-Vi-FlashCards/
 
 1. **Tải file HTML** về máy:
    - Truy cập repository này → click **Code** → **Download ZIP**
-   - Hoặc tải trực tiếp file [`index.html`](index.html)
+   - Hoặc tải trực tiếp file `index.html`
 
 2. **Mở bằng trình duyệt**:
    - Nhấp đúp vào file `index.html` → trình duyệt mặc định sẽ mở ứng dụng.
    - Hoặc kéo thả file vào cửa sổ Chrome/Firefox/Safari/Edge.
-
-### Cách 3: Clone repository
-
-```bash
-git clone https://github.com/<username>/medical-english-flashcards.git
-cd medical-english-flashcards
-
-# Mở file index.html bằng trình duyệt
-open index.html          # macOS
-start index.html         # Windows
-xdg-open index.html      # Linux
-```
 
 ---
 
@@ -171,56 +137,6 @@ xdg-open index.html      # Linux
 - Chọn file JSON đã xuất trước đó.
 - **Lưu ý:** Việc nhập sẽ ghi đè lên tiến độ hiện tại (có xác nhận).
 
----
-
-## 🏗️ Kiến trúc kỹ thuật
-
-### Nguyên tắc thiết kế
-
-```
-┌─────────────────────────────────────────┐
-│      index.html (Single File)           │
-│  ┌───────────────────────────────────┐  │
-│  │  HTML (semantic + ARIA)           │  │
-│  ├───────────────────────────────────┤  │
-│  │  CSS (custom properties, theme)   │  │
-│  ├───────────────────────────────────┤  │
-│  │  JavaScript (Vanilla ES6+)        │  │
-│  │  ┌─────────────────────────────┐  │  │
-│  │  │  SRSManager (pure functions)│  │  │
-│  │  │  TTSEngineManager           │  │  │
-│  │  │  StorageManager             │  │  │
-│  │  │  UIController               │  │  │
-│  │  └─────────────────────────────┘  │  │
-│  ├───────────────────────────────────┤  │
-│  │  Dataset JSON (embedded/loaded)   │  │
-│  └───────────────────────────────────┘  │
-└─────────────────────────────────────────┘
-```
-
-### Các module chính
-
-| Module | Trách nhiệm |
-|---|---|
-| **SessionManager** | Quản lý queue, currentIndex, visitToken |
-| **SRSManager** | Tính toán trạng thái SRS (pure functions, không phụ thuộc DOM) |
-| **ProgressManager** | Cập nhật thanh tiến độ theo visitedCardKeys |
-| **TTSEngineManager** | Điều phối 4 engine TTS theo thứ tự ưu tiên |
-| **TTSPlaybackManager** | Ngăn chặn phát chồng, quản lý request ID |
-| **StorageManager** | Lưu/khôi phục từ localStorage |
-| **BookmarkManager** | Quản lý đánh dấu thẻ |
-| **ThemeManager** | Sáng/tối |
-| **UIController** | Render, cập nhật DOM |
----
-
-## 🎤 Bốn TTS Engine
-
-| Engine | Chi phí | Offline | Chất lượng | Trạng thái |
-|---|---|---|---|---|
-| **Browser Native TTS** | Miễn phí | ✅ | ⭐⭐⭐ | ✅ Hoạt động ngay |
-| **Kokoro Offline Neural** | Miễn phí | ✅ | ⭐⭐⭐⭐⭐ | ⚠️ Cần nhúng model |
-| **Google Cloud TTS** | Trả phí | ❌ | ⭐⭐⭐⭐⭐ | ⚠️ Cần OAuth |
-| **Microsoft Azure** | Trả phí | ❌ | ⭐⭐⭐⭐⭐ | ⚠️ Cần credentials |
 ---
 
 ### Nguồn tham khảo từ vựng
