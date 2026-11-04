@@ -13,13 +13,11 @@ Flashcard Tiếng Anh Y khoa là một ứng dụng web học tiếng Anh chuyê
 ## ✨ Tính năng
 
 ### 📊 Ba chế độ học
-
 1. **Tất cả thẻ** — Toàn bộ 2077 bản ghi.
 2. **Từ vựng và cụm từ** — 1505 từ/cụm từ y khoa.
 3. **Cấu trúc câu** — 572 pattern câu thực hành.
 
 ### 🎯 Ba nút Review luôn hiển thị
-
 | Nút | Nhãn tiếng Anh | Ý nghĩa |
 |---|---|---|
 | 🔴 Chưa nhớ | Again | Không nhớ — quay lại học |
@@ -27,26 +25,22 @@ Flashcard Tiếng Anh Y khoa là một ứng dụng web học tiếng Anh chuyê
 | 🟢 Nhớ tốt | Good | Nhớ tốt — tăng khoảng cách ôn tập |
 
 ### 🔁 Điều hướng linh hoạt
-
 - **Chuột** — Click nút Previous/Next/Flip/Shuffle.
 - **Bàn phím** — Mũi tên trái/phải, Space, Enter, phím tắt 1/2/3.
 
 ### 🎤 Bốn TTS Engine
-
 - **Browser Native TTS** — Miễn phí, hoạt động offline, chất lượng phụ thuộc hệ điều hành.
 - **Kokoro Offline Neural** — Neural TTS chất lượng cao, chạy hoàn toàn offline (khi được nhúng model).
 - **Google Cloud TTS** — Giọng đọc Neural chất lượng cao, cần OAuth và kết nối Internet.
 - **Microsoft Azure AI Speech** — Tương tự Google, có nhiều tuỳ chọn giọng đọc Neural.
 
 ### 💾 Lưu trữ tiến độ
-
 - Tự động lưu tiến độ SRS sau mỗi lần Review.
 - Lưu bookmark, cài đặt TTS, theme.
 - **Xuất/nhập tiến độ** — Sao lưu hoặc chuyển giữa các thiết bị dưới dạng JSON.
 - **Không lưu credentials** — API key Google/Azure chỉ tồn tại trong RAM.
 
 ### 🎨 Theme sáng/tối
-
 - Chuyển đổi một chạm.
 - Tự động lưu lựa chọn.
 - Màu sắc tương phản cao, đạt chuẩn WCAG AA.
@@ -61,7 +55,6 @@ https://thaipv96.github.io/Medical-En-Vi-FlashCards/
 ## 📚 Hướng dẫn sử dụng
 
 ### Học một thẻ
-
 1. **Đọc Front** — Thuật ngữ, IPA, từ loại.
 2. **Đoán nghĩa** — Cố nhớ nghĩa tiếng Việt trước khi lật.
 3. **Lật thẻ** — Tap vào thẻ hoặc nhấn phím Space.
@@ -73,7 +66,6 @@ https://thaipv96.github.io/Medical-En-Vi-FlashCards/
 6. **Chuyển thẻ** — Tự động hoặc nhấn Next.
 
 ### Điều hướng
-
 | Thao tác | Kết quả |
 |---|---|
 | Tap card | Lật thẻ |
