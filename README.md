@@ -3,7 +3,6 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript ES6+](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![No Dependencies](https://img.shields.io/badge/dependencies-0-success?style=flat-square)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 ---
@@ -11,14 +10,6 @@
 ## 🎯 Giới thiệu
 
 **Flashcard Tiếng Anh Y khoa** là một ứng dụng web học tiếng Anh chuyên ngành y khoa, được thiết kế đặc biệt cho các bác sĩ, điều dưỡng và sinh viên y khoa người Việt. Toàn bộ giao diện bằng tiếng Việt, nội dung học bằng tiếng Anh.
-
-### Đối tượng sử dụng
-
-- 🩺 Bác sĩ lâm sàng cần trau dồi thuật ngữ tiếng Anh trong thực hành.
-- 📚 Sinh viên y khoa chuẩn bị cho các kỳ thi quốc tế (USMLE, PLAB, MRCP…).
-- 🏥 Nhân viên y tế tham gia hội thảo, viết bài báo khoa học quốc tế.
-- 🎓 Giảng viên y khoa cần tài liệu học tập tương tác.
-
 ---
 
 ## ✨ Tính năng
@@ -41,7 +32,6 @@
 
 - **Chuột** — Click nút Previous/Next/Flip/Shuffle.
 - **Bàn phím** — Mũi tên trái/phải, Space, Enter, phím tắt 1/2/3.
-- **Cảm ứng** — Vuốt ngang để chuyển thẻ, vuốt không kích hoạt lật thẻ.
 
 ### 🎤 Bốn TTS Engine
 
